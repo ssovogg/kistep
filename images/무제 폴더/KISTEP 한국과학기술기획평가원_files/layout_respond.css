@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+title       : 레이아웃 반응형
+Author      : 플랜아이 광주
+Create date : 2020-02-14
+-------------------------------------------------*/
+@media (max-width: 1730px) { 
+.topbanner .open { display: none; }
+#gnb2.active .close {
+    top: 3rem;
+	}
+#footer .btn_top {
+	left: inherit;
+	right: 1rem;
+    width: 6rem;
+    height: 6rem;
+	margin-left: 0;
+    font-size: 1.5rem;
+	}		
+ }
+@media (max-width: 1460px) { 
+#gnb1 > ul > li { margin: 0 1.5rem;}
+}
+@media (max-width: 1340px) { 
+#hnb .search {margin-right: 2rem;}
+#gnb1 > ul > li { margin: 0 1rem;}
+}
+
+@media (max-width: 1160px) { 
+#gnb1 .submenu .desc .title {
+	margin-left: 3rem;
+	}	
+.topmenu_all [class*="menu0"] > .depth1 {
+	width: 18rem;
+	}
+#footer .related {
+    top: inherit;
+    bottom: 0;
+	}	
+.footbanner .bx-viewport {
+	width: calc(100% -  12rem) !important;
+	}
+.footbanner .bx-controls {height: 3.5rem;}
+.footbanner .bx-controls-auto {width: 3.5rem;}
+.footbanner .bx-controls a {width: 3.5rem; height: 3.5rem;  line-height: 3.5rem;}
+#footer .btn-top { bottom: 25rem; }
+
+#fnb { margin-bottom: 2rem; }
+#footer .mark { display: none; }
+#fnb .fnb2 { width: 100%; }
+#siteinfo { padding-left: 0; }
+ }
+ 
+@media (max-width: 1135px) {
+#gnb1 { display: none; }
+}
+@media (max-width: 1024px) {
+#gnb2.active .nav_area {display: block;}
+#header .allmenu_close {right: 2.5%;}
+.nav_area .tit {width: 1px;height: 1px; padding-top: 0; overflow: hidden;}
+.nav_area > nav {width: 95%; margin: 6rem auto 0;}
+.topmenu_all {height: auto;}
+.topmenu_all [class*="menu0"] {width: 100%;  padding: 0; border:none;}
+.topmenu_all [class*="menu0"] > .depth1 {float: none; width: 100%; margin-bottom: 0;  padding: 1.5rem 0;  border-bottom: 1px solid #ddd; font-size: 2rem;}
+.topmenu_all .submenu {height: 0; opacity: 0; visibility: hidden;}
+.topmenu_all li.active .submenu {height: auto;  border-bottom: 1px solid #ddd;  visibility: visible; opacity: 1; }
+.topmenu_all .submenu > ul > li {width: 100%; margin: 1rem 0;}
+.topmenu_all .submenu > ul > li > a {margin-bottom: 0;}
+.topmenu_all .submenu > ul > li > div {margin-top: 1rem;}
+.topmenu_all [class*="menu0"] > .depth1::after {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    font-size: 18px;
+    font-family: "xeicon";
+    transform: translateY(-50%);
+    content: "\e942";
+	}
+.topmenu_all li.active > .depth1::after {
+  content: "\e945";
+	}
+}
+@media (max-width: 790px) { 
+.footbanner {
+    margin: 2.5rem auto;
+	}	
+#footer .related {
+	position: inherit;
+	top: inherit;
+	right: inherit;
+	width: 100%;
+	margin-bottom: 2rem;
+	}
+#footer .btn_top {
+	bottom: 24rem;
+	}
+.fnb1 li {width: 33.33%;margin-bottom: 1.2rem;}	
+.fnb1 li:nth-child(3) a::after {opacity:0 ;} 
+}
+@media (max-width: 620px) { 
+#header {height: 12.3rem;}	
+#logo {top: 6.3rem;}
+.allmenu_open { margin-top: -0.6rem;}
+
+}
+@media (max-width: 565px) { 
+#header .search input {width: calc(100% - 3rem);}	
+#header .allmenu_close {right: 5%;}	
+.nav_area > nav {width: 90%;}	
+#footer .btn_top {
+	bottom: 27rem;
+	}	
+}
+@media (max-width: 480px) { 
+.header_wrap {max-width: 90%;}
+#logo {width: 25rem;}	
+#hnb {width: 100%;}
+#hnb .search {width: calc(100% - 15rem); margin-right: 0; }
+.fnb1 li {width: 50%; margin-bottom: 1.2rem;}	
+.fnb1 li:nth-child(even) a::after {opacity: 0;} 
+.fnb1 li:nth-child(3) a::after {opacity: 0.5;} 
+
+.footbanner {margin: 1.3rem auto;}
+.footbanner .list {width: 100% !important; text-align: center;}
+.footbanner li {width: 100% !important; margin: 0; background-color: #fff;}
+#footer .btn_top { 
+	bottom: -4rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.4rem;
+	}	
+}
+@media (max-width: 390px) { 
+#logo {width: 22rem;}	
+#hnb .hnb2 li + li {margin-left: 0.5rem;}
+#footer .btn_top {
+	display: none;
+	}
+.footbanner li { border: 1px solid #ddd;}	
+.footbanner .bx-viewport {
+	float: none;
+	width: 100% !important;
+	height: 47px !important;
+	margin: 0;
+	}
+.footbanner .bx-controls {
+    float: none;
+    margin-top: 1rem;
+    text-align: right;
+    padding-right: 0.1rem;
+    }	
+}

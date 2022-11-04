@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+title       : 초기화
+Author      : 플랜아이 광주
+Create date : 2020-03-02
+-------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+@import url("../../font/dingbat_xeicon.css");
+@import url("../../font/webfonts_NotoSansKR.css");
+@import url("jquery.mCustomScrollbar.css");
+
+*, *:before, *:after{box-sizing:inherit;}
+html {min-width: 360px; margin: 0; padding: 0; box-sizing:border-box; text-size-adjust: none; -webkit-text-size-adjust: none; word-break: keep-all; font-size: 10px; overflow-y: scroll; }
+body {margin: 0; padding: 0; color: #444;  line-height: 1.5625; font-size: 1.6rem; font-family: Noto Sans KR, "맑은 고딕", Malgun Gothic, "돋움", Dotum, "굴림", Gulim, Tahoma, Verdana, AppleGothic, UnDotum, sans-serif; font-weight: 300;}
+header, footer, article, section, aside, nav, main{display:block;}
+mark{background-color:#fff;}
+a {color: inherit; text-decoration: none;}
+a:hover {text-decoration: underline;}
+a[href*=tel]{color: inherit;}
+ul, ol, li, dl, dt, dd { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, h5, h6, p, form, figure, figcaption { margin: 0; padding: 0; }
+fieldset, hr { display: block; margin: 0; padding: 0; border: 0 none; }
+input, select { max-width: 100%; vertical-align: middle; background-color: #fff;-webkit-appearance:none; border-radius: 0;}
+input, select, button, textarea, optgroup { margin: 0; font-family: inherit; font-size: inherit; color: inherit; }
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select::-ms-expand { display: none; }
+address, em, i { font-style: normal; }
+strong { font-weight: 700; }
+button { padding: 0; border: 0 none; background: none; cursor: pointer; }
+input[type='submit'] { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+img { max-width: 100%; border: 0 none; font-size: 0; vertical-align: middle; }
+img[usemap] {max-width: 100%; width: auto; height: auto;}
+table { width: 100%; border-collapse: collapse; }
+table th{white-space:nowrap;}
+table td{white-space:normal;}
+caption, legend, .sr_only, .sr-only, .hidden, .blind, .IR { overflow: hidden; position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0 none; clip: rect(0, 0, 0, 0); }
+iframe {margin:0; padding:0; border:currentcolor; border-image-source:none;}
+
+.bx-wrapper .bx-loading { display: none; }
+.bx-wrapper .bx-viewport {box-shadow: 0 0 0 transparent; }
+#skip_nav { position: absolute; left: 0; top: -1000px; width: 100%; height: 0px; z-index: 1000; line-height: 0px; font-size: 0px; }
+#skip_nav a { display: block; text-align: center; width: 100%; line-height: 0px; font-size: 0px; }
+#skip_nav a:focus, #skip_nav a:hover, #skip_nav a:active { position: absolute; left: 0px; top: 1000px; padding: 8px 0; display: block; height: 30px; background: #20262c; font-size: 12px; font-weight: bold; line-height: 18px; color: #fff; }
+
+#popup_wrap {padding: 2rem; overflow: hidden;}
+/* Float STYLE*/
+.float_wrap, .float_wrap02 {clear: both; overflow: hidden;}
+.float_wrap02 {margin-top: 7rem;}
+.clear  {clear: both;}
+.float_left {float: left;}
+.float_right {float: right;}
+.display_none {display: none;}
+.display_block {display: block;}
+.display_inline {display: inline-block;}
+.vertical_middle {vertical-align: middle;}
+.vertical_img {display: inline-block; margin-right: 10px;vertical-align: middle;}
+
+/* point color STYLE */
+[class*="point01"] {/* 빨강 */color: #EC411B;}
+[class*="point02"] {/* 파랑 */color: #3F58A8;}
+.point01_bold, .point02_bold, .txt_bold, .black_bold  {font-weight: 700;}
+
+/* 폰트정렬 STYLE*/
+.txt_left { text-align: left !important; }
+.txt_center { text-align: center !important; }
+.txt_right { text-align: right !important; }
+
+img[usemap] {max-width: 100%; width: auto; height: auto;}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {position: relative;  min-height: 1px;}
+.col-xs-12 {width: 100%;}
+.col-xs-11 {width: 91.66666667%;}
+.col-xs-10{width:83.33333333%;}
+.col-xs-9{width:75%;}
+.col-xs-8{width:66.66666667%;}
+.col-xs-7{width:58.33333333%;}
+.col-xs-6{width:50%;}
+.col-xs-5{width:41.66666667%;}
+.col-xs-4{width:33.33333333%;}
+.col-xs-3{width:25%;}
+.col-xs-2{width:16.66666667%;}
+.col-xs-1{width:8.33333333%;}
+
+@media (min-width: 768px) {
+.col-sm-12{width:100%;}
+.col-sm-11{width:91.66666667%;}
+.col-sm-10{width:83.33333333%;}
+.col-sm-9{width:75%;}
+.col-sm-8{width:66.66666667%;}
+.col-sm-7{width:58.33333333%;}
+.col-sm-6{width:50%;}
+.col-sm-5{width:41.66666667%;}
+.col-sm-4{width:33.33333333%;}
+.col-sm-3{width:25%;}
+.col-sm-2{width:16.66666667%;}
+.col-sm-1{width:8.33333333%;}
+}
+@media (min-width: 992px){
+.col-md-12{width:100%;}
+.col-md-11{width:91.66666667%;}
+.col-md-10{width:83.33333333%;}
+.col-md-9{width:75%;}
+.col-md-8{width:66.66666667%;}
+.col-md-7{width:58.33333333%;}
+.col-md-6{width:50%;}
+.col-md-5{width:41.66666667%;}
+.col-md-4{width:33.33333333%;}
+.col-md-3{width:25%;}
+.col-md-2{width:16.66666667%;}
+.col-md-1{width:8.33333333%;}
+}
+@media (min-width: 1200px){
+.col-lg-12{width:100%;}
+.col-lg-11{width:91.66666667%;}
+.col-lg-10{width:83.33333333%;}
+.col-lg-9{width:75%;}
+.col-lg-8{width:66.66666667%;}
+.col-lg-7{width:58.33333333%;}
+.col-lg-6{width:50%;}
+.col-lg-5{width:41.66666667%;}
+.col-lg-4{width:33.33333333%;}
+.col-lg-3{width:25%;}
+.col-lg-2{width:16.66666667%;}
+.col-lg-1{width:8.33333333%;}
+}
+@media (max-width: 1280px) { 
+	html { font-size: 9px; } 
+}
+@media (max-width: 1024px) {
+.board_list::-webkit-scrollbar {width: 5px; height: 8px; -webkit-appearance: none; } 
+.board_list::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, .5); border-radius: 8px; } 
+.board_list::-webkit-scrollbar-track { border-radius: 8px; background-color: #ddd; }
+}
+/* @media (max-width: 768px) { html { font-size: 8px; } } */

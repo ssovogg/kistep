@@ -1,0 +1,60 @@
+:root {
+  /* font-family */
+  --noto: 'Noto Sans KR', sans-serif;
+  --mont: 'Montserrat', sans-serif;
+
+  /* color */
+  --white: white;
+  --bblack: #000;
+  --black: #333;
+  --d-grey: #777;
+  --l-grey: #ebebeb;
+  --navy:#121D76;
+  --blue: #1D388C;
+  --d-blue: #122a77;
+  --l-blue: #294190;
+  --orange: ##EC411B;
+  --purple: #543697;
+  --red: #ec411b;
+
+  /* layout */
+  --gap: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* outline-style: none; */
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--noto);
+  color: var(--d-black);
+  line-height: 1.4;
+}
+
