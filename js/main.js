@@ -113,6 +113,10 @@ briefTabs.forEach((tab)=>{
 const briefList = document.querySelector("#pub_brief01");
 const briefList02 = document.querySelector("#pub_brief02");
 const briefList03 = document.querySelector("#pub_brief03");
+const briefList04 = document.querySelector("#pub_brief04");
+const briefList05 = document.querySelector("#pub_brief05");
+const briefList06 = document.querySelector("#pub_brief06");
+const briefList07 = document.querySelector("#pub_brief07");
 let brief01 = [];
 let brief02 = [];
 let brief03 = [];
@@ -134,4 +138,12 @@ function fetchPublicData(data){
   briefList02.innerHTML = brief02.join('');
   brief03 = data.brief03.map(item => `<li><a href="#"><div class="public_img"><img src="${item.img}" alt="${item.alt}"/></div><storng class="tit">${item.title}</storng></a></li>`)
   briefList03.innerHTML = brief03.join('');
+  brief04 = data.brief04.map(item => `<li><a href="#"><div class="public_img"><img src="${item.img}" alt="${item.alt}"/></div><storng class="tit">${item.title}</storng></a></li>`)
+  briefList04.innerHTML = brief04.join('');
+  brief05 = data.brief05.map(item => `<li><a href="#"><div class="public_img"><img src="${item.img}" alt="${item.alt}"/></div><storng class="tit">${item.title}</storng></a></li>`)
+  briefList05.innerHTML = brief05.join('');
+  brief06 = data.brief06.map(item => `<li><a href="#"><div class="public_img"><img src="${item.img}" alt="${item.alt}"/></div><storng class="tit">${item.title}</storng></a></li>`)
+  briefList06.innerHTML = brief06.join('');
+  brief07 = data.brief07.map(item => `<li><a href="#"><div class="public_img"><img src="${item.img}" alt="${item.alt}"/></div><storng class="tit">${item.title}</storng></a></li>`)
+  briefList07.innerHTML = brief07.join('');
 }
