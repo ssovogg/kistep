@@ -306,11 +306,53 @@
       </header>
       <!-- 비쥬얼 영역 -->
       <section class="visual">
+        <div class="vs_wrap">
+          <div class="vs_title">
+            <strong class="subject">
+              <span class="kor">과학기술 혁신정책</span>
+              <span class="eng">Think-Tank</span>
+            </strong>
+            <p class="desc">
+              KISTEP은 과학기술과 사람, 사회를 연결하여 국민 삶의 질을 높이고
+              <br />
+              국가경쟁력 강화에 기여하기 위해 최선을 다하고 있습니다.
+            </p>
+          </div>
+          <div class="vs_slide">
+            <ul class="vs_slides">
+              <li
+                style="
+                  background: url('./images/vs_01.jpeg') center/cover no-repeat;
+                "
+                class="vs_active"
+              ></li>
+              <li
+                style="
+                  background: url('./images/vs_02.jpeg') center/cover no-repeat;
+                "
+              ></li>
+              <li
+                style="
+                  background: url('./images/vs_03.jpeg') center/cover no-repeat;
+                "
+              ></li>
+              <li
+                style="
+                  background: url('./images/vs_04.jpeg') center/cover no-repeat;
+                "
+              ></li>
+            </ul>
+            <ul class="vs_controll">
+              <li class="vs_prev">
+                <i class="fa-solid fa-arrow-left-long"></i>
+              </li>
+              <li class="vs_next">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="inner">
-          <ul class="vs_controll">
-            <li><i class="fa-solid fa-arrow-left-long"></i></li>
-            <li><i class="fa-solid fa-arrow-right-long"></i></li>
-          </ul>
           <div class="vss_slide">
             <ul class="vss_slide_list">
               <li>
@@ -402,9 +444,52 @@
           </article>
           <article class="card_news card_pop">
             <h2 class="section_title">카드뉴스</h2>
-            <a href="#">
-              <img src="./images/card_01.jpeg" alt="바이오플라스틱" />
-            </a>
+            <ul class="card_slides">
+              <li class="card_active">
+                <a href="#">
+                  <img src="./images/card_01.jpeg" alt="바이오플라스틱" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/card_02.jpeg" alt="이산화탄소 활용" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/card_03.png"
+                    alt="우리나라 여성과학기술인력 현황"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/card_04.png"
+                    alt="우리나라 대학의 지식재산 창출과 활용 현황"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/card_05.jpeg" alt="양자정보기술" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/card_06.png" alt="을지연습" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/card_07.jpeg"
+                    alt="다누리의 시작을 응원합니다"
+                  />
+                </a>
+              </li>
+            </ul>
             <ul class="card_controll">
               <li class="cc_paper">1 / 7</li>
               <li class="cc_prev">
@@ -414,24 +499,42 @@
                 <i class="fa-solid fa-arrow-right-long"></i>
               </li>
               <li class="cc_play"><i class="fa-solid fa-play"></i></li>
-              <li class="cc_stop"><i class="fa-solid fa-pause"></i></li>
             </ul>
           </article>
           <article class="pop_up card_pop">
             <h2 class="section_title">팝업존</h2>
-            <a href="#">
-              <img src="./images/pop_01.jpeg" alt="국민과 함께 안전한국훈련" />
-            </a>
+            <ul class="pop_slides">
+              <li class="pop_active">
+                <a href="#">
+                  <img
+                    src="./images/pop_01.jpeg"
+                    alt="국민과 함께 안전한국훈련"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./images/pop_02.jpeg"
+                    alt="인쇄물출입업체 등록안내"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/pop_03.jpeg" alt="홈페이지 불편사항신고" />
+                </a>
+              </li>
+            </ul>
             <ul class="card_controll">
               <li class="pc_paper">1 / 3</li>
-              <li class="cc_prev">
+              <li class="pc_prev">
                 <i class="fa-solid fa-arrow-left-long"></i>
               </li>
-              <li class="cc_next">
+              <li class="pc_next">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </li>
-              <li class="cc_play"><i class="fa-solid fa-play"></i></li>
-              <li class="cc_stop"><i class="fa-solid fa-pause"></i></li>
+              <li class="pc_play"><i class="fa-solid fa-play"></i></li>
             </ul>
           </article>
         </div>
@@ -607,36 +710,60 @@
                   <a href="#">
                     <span class="report_status">예비타당성조사</span>
                     <div class="public_img">
-                      <img src="./images/report_01.svg" alt="2021년도 예비타당성조사 보고서 국가 플래그십 초고성능컴퓨팅 인프라 고도화 사업" />
+                      <img
+                        src="./images/report_01.svg"
+                        alt="2021년도 예비타당성조사 보고서 국가 플래그십 초고성능컴퓨팅 인프라 고도화 사업"
+                      />
                     </div>
-                    <strong class="tit">2021년도 예비타당성조사 보고서 국가 플래그십 초고성능컴퓨팅 인프라 고도화 사업</strong>
+                    <strong class="tit"
+                      >2021년도 예비타당성조사 보고서 국가 플래그십
+                      초고성능컴퓨팅 인프라 고도화 사업</strong
+                    >
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span class="report_status">예비타당성조사</span>
                     <div class="public_img">
-                      <img src="./images/report_01.svg" alt="2021년도 예비타당성조사 보고서 탄소중립혁신기술개발사업" />
+                      <img
+                        src="./images/report_01.svg"
+                        alt="2021년도 예비타당성조사 보고서 탄소중립혁신기술개발사업"
+                      />
                     </div>
-                    <strong class="tit">2021년도 예비타당성조사 보고서 탄소중립혁신기술개발사업</strong>
+                    <strong class="tit"
+                      >2021년도 예비타당성조사 보고서
+                      탄소중립혁신기술개발사업</strong
+                    >
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span class="report_status">예비타당성조사</span>
                     <div class="public_img">
-                      <img src="./images/report_01.svg" alt="2021년도 예비타당성조사 보고서 극한소재 실증연구 기반조성 사업" />
+                      <img
+                        src="./images/report_01.svg"
+                        alt="2021년도 예비타당성조사 보고서 극한소재 실증연구 기반조성 사업"
+                      />
                     </div>
-                    <strong class="tit">2021년도 예비타당성조사 보고서 극한소재 실증연구 기반조성 사업</strong>
+                    <strong class="tit"
+                      >2021년도 예비타당성조사 보고서 극한소재 실증연구 기반조성
+                      사업</strong
+                    >
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <span class="report_status">예비타당성조사</span>
                     <div class="public_img">
-                      <img src="./images/report_01.svg" alt="2021년도 예비타당성조사 보고서 미래대응 섬유 고부가 전략기술 개발사업" />
+                      <img
+                        src="./images/report_01.svg"
+                        alt="2021년도 예비타당성조사 보고서 미래대응 섬유 고부가 전략기술 개발사업"
+                      />
                     </div>
-                    <strong class="tit">2021년도 예비타당성조사 보고서 미래대응 섬유 고부가 전략기술 개발사업</strong>
+                    <strong class="tit"
+                      >2021년도 예비타당성조사 보고서 미래대응 섬유 고부가
+                      전략기술 개발사업</strong
+                    >
                   </a>
                 </li>
               </ul>
@@ -761,40 +888,41 @@
               <a href="#" class="ba_auto"><i class="fa-solid fa-pause"></i></a>
             </li>
           </ul>
-          <ul class="banner_list">
-            <li>
-              <a href="#"
-                ><img src="./images/banner01.jpeg" alt="사회문제해결 플랫폼"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./images/banner02.gif" alt="과학기술인재정책 플랫폼"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/banner03.gif"
-                  alt="범부처통합연구지원시스템"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./images/banner04.gif" alt="청렴포털 부패공익신고"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./images/banner05.gif" alt="국가과학기술인력개발원"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./images/banner06.jpeg" alt="사회문제해결 플랫폼"
-              /></a>
-            </li>
-          </ul>
+          <div class="banner_slides">
+            <ul class="banner_list">
+              <li>
+                <a href="#"
+                  ><img src="./images/banner01.jpeg" alt="사회문제해결 플랫폼"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/banner02.gif"
+                    alt="과학기술인재정책 플랫폼"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/banner03.gif"
+                    alt="범부처통합연구지원시스템"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/banner04.gif" alt="청렴포털 부패공익신고"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/banner05.gif"
+                    alt="국가과학기술인력개발원"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- 푸터 영역 -->
