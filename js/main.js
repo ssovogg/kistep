@@ -1,3 +1,33 @@
+// 헤더 영역 언어 버튼 선택
+const langBtn = document.querySelector('.lang_btn i');
+const langEn = document.querySelector('.lang_en');
+langBtn.addEventListener('click', ()=>{
+  if(langEn.style.opacity === '1'){
+    langEn.style.opacity = '0';
+  } else {
+    langEn.style.opacity = '1';
+  }
+  langBtn.classList.toggle('lang_active');  
+})
+
+// 헤더 영역 호버 이벤트 추가
+const header = document.querySelector('.header');
+const mainmenuBtns = document.querySelectorAll('.mainmenu');
+for (const menu of mainmenuBtns){
+  menu.addEventListener('mouseover', ()=>{
+    header.classList.add('header_hover');
+  })
+  menu.addEventListener('mouseout', ()=>{
+    header.classList.remove('header_hover');
+  })
+}
+
+// 헤더 영역 전체메뉴 보기 버튼 클릭 이벤트 
+const allMenuBtn = document.querySelector('.allmenu_open span');
+allMenuBtn.addEventListener('click', ()=>{
+  console.log('click');
+})
+
 // 비쥬얼 영역 메인 이미지 슬라이드 구현
 const vsSlide = document.querySelectorAll(".vs_slides li"),
   vsPrevBtn = document.querySelector(".vs_prev"),
@@ -295,3 +325,12 @@ function moveBnSlide(num){
   bnTotalWidth = +bnTotalWidth + bnWidths[num];
   console.log(bnTotalWidth);
 }
+
+// 푸터 영역 - 관련 사이트 리스트 보여주기
+const siteLabel = document.querySelector('.site_label');
+const siteList = document.querySelector('.site_list');
+siteLabel.addEventListener('click', (e)=>{
+  e.preventDefault();
+  siteLabel.classList.toggle('site_label_active');
+  siteList.classList.toggle('site_list_active');
+})
