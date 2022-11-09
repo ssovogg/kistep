@@ -258,7 +258,9 @@
               </li>
             </ul>
           </nav>
-          <button class="sitemap_close">닫기</button>
+          <button class="sitemap_close">
+            <img src="./images/plus.png" alt="닫기" />
+          </button>
         </div>
       </section>
 
@@ -609,7 +611,7 @@
         <div class="inner">
           <div class="vss_slide">
             <ul class="vss_slide_list">
-              <li>
+              <li class="vss_active">
                 <a href="#" class="vss_text_box">
                   <strong class="title"
                     >하반기 혁신도전 프로젝트 연구개발사업...</strong
@@ -696,171 +698,189 @@
               </ul>
             </div>
           </article>
-          <article class="card_news card_pop">
-            <h2 class="section_title">카드뉴스</h2>
-            <ul class="card_slides">
-              <li class="card_active">
-                <a href="#">
-                  <img src="./images/card_01.jpeg" alt="바이오플라스틱" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./images/card_02.jpeg" alt="이산화탄소 활용" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/card_03.png"
-                    alt="우리나라 여성과학기술인력 현황"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/card_04.png"
-                    alt="우리나라 대학의 지식재산 창출과 활용 현황"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./images/card_05.jpeg" alt="양자정보기술" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./images/card_06.png" alt="을지연습" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/card_07.jpeg"
-                    alt="다누리의 시작을 응원합니다"
-                  />
-                </a>
-              </li>
-            </ul>
-            <ul class="card_controll">
-              <li class="cc_paper">1 / 7</li>
-              <li class="cc_prev">
-                <i class="fa-solid fa-arrow-left-long"></i>
-              </li>
-              <li class="cc_next">
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </li>
-              <li class="cc_play"><i class="fa-solid fa-play"></i></li>
-            </ul>
-          </article>
-          <article class="pop_up card_pop">
-            <h2 class="section_title">팝업존</h2>
-            <ul class="pop_slides">
-              <li class="pop_active">
-                <a href="#">
-                  <img
-                    src="./images/pop_01.jpeg"
-                    alt="국민과 함께 안전한국훈련"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="./images/pop_02.jpeg"
-                    alt="인쇄물출입업체 등록안내"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="./images/pop_03.jpeg" alt="홈페이지 불편사항신고" />
-                </a>
-              </li>
-            </ul>
-            <ul class="card_controll">
-              <li class="pc_paper">1 / 3</li>
-              <li class="pc_prev">
-                <i class="fa-solid fa-arrow-left-long"></i>
-              </li>
-              <li class="pc_next">
-                <i class="fa-solid fa-arrow-right-long"></i>
-              </li>
-              <li class="pc_play"><i class="fa-solid fa-play"></i></li>
-            </ul>
-          </article>
+          <div class="card_pop_wrap">
+            <article class="card_news card_pop">
+              <h2 class="section_title">카드뉴스</h2>
+              <ul class="card_slides">
+                <li class="card_active">
+                  <a href="#">
+                    <img src="./images/card_01.jpeg" alt="바이오플라스틱" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/card_02.jpeg" alt="이산화탄소 활용" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/card_03.png"
+                      alt="우리나라 여성과학기술인력 현황"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/card_04.png"
+                      alt="우리나라 대학의 지식재산 창출과 활용 현황"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/card_05.jpeg" alt="양자정보기술" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/card_06.png" alt="을지연습" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/card_07.jpeg"
+                      alt="다누리의 시작을 응원합니다"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <ul class="card_controll">
+                <li class="cc_paper">1 / 7</li>
+                <li class="cc_prev">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </li>
+                <li class="cc_next">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </li>
+                <li class="cc_play"><i class="fa-solid fa-play"></i></li>
+              </ul>
+            </article>
+            <article class="pop_up card_pop">
+              <h2 class="section_title">팝업존</h2>
+              <ul class="pop_slides">
+                <li class="pop_active">
+                  <a href="#">
+                    <img
+                      src="./images/pop_01.jpeg"
+                      alt="국민과 함께 안전한국훈련"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/pop_02.jpeg"
+                      alt="인쇄물출입업체 등록안내"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./images/pop_03.jpeg"
+                      alt="홈페이지 불편사항신고"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <ul class="card_controll">
+                <li class="pc_paper">1 / 3</li>
+                <li class="pc_prev">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </li>
+                <li class="pc_next">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </li>
+                <li class="pc_play"><i class="fa-solid fa-play"></i></li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
       <!-- 행사 영역 -->
       <section class="forum">
         <div class="inner">
           <h2 class="section_title">포럼 및 행사</h2>
-          <ul class="forum_list">
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/forum_01.jpeg"
-                  alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
-              /></a>
-              <div class="forum_txt">
-                <span class="forum_status">행사안내</span>
-                <a href="#" class="tit"
-                  >제6차 지방과학기술진흥종합계획 및 지역과학기술혁신법
-                  충청·수도권 공청..</a
-                >
-                <span class="date">2022-11-03(목) 13:00 ~ 15:00</span>
-                <span class="place">대전 롯데시티호텔 1층 크리스탈볼룸</span>
-              </div>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/forum_02.jpeg"
-                  alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
-              /></a>
-              <div class="forum_txt">
-                <a href="#" class="tit"
-                  >제6차 지방과학기술진흥종합계획 및 지역과학기술혁신법
-                  충청·수도권 공청..</a
-                >
-                <span class="date">2022-11-03(목) 13:00 ~ 15:00</span>
-                <span class="forum_status">행사안내</span>
-              </div>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/forum_03.jpeg"
-                  alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
-              /></a>
-              <div class="forum_txt">
-                <a href="#" class="tit"
-                  >하반기 혁신도전 프로젝트 연구개발사업 공보</a
-                >
-                <span class="date"
-                  >2022-10-17(월) 00:00 ~ 2022-11-16(수) 23:59</span
-                >
-                <span class="forum_status">행사안내</span>
-              </div>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/forum_04.png"
-                  alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
-              /></a>
-              <div class="forum_txt">
-                <a href="#" class="tit"
-                  >제151회 수요포럼 개최, 바이오 디지털 전환과 신성장
-                  투자전략</a
-                >
-                <span class="date">2022-10-12(화) 18:05</span>
-                <span class="forum_status d_day">수요포럼</span>
-              </div>
-            </li>
-          </ul>
+          <div class="forum_list_wrap">
+            <ul class="forum_list">
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/forum_01.jpeg"
+                    alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
+                /></a>
+                <div class="forum_txt">
+                  <span class="forum_status">행사안내</span>
+                  <a href="#" class="tit"
+                    >제6차 지방과학기술진흥종합계획 및 지역과학기술혁신법
+                    충청·수도권 공청..</a
+                  >
+                  <span class="date">2022-11-03(목) 13:00 ~ 15:00</span>
+                  <span class="place">대전 롯데시티호텔 1층 크리스탈볼룸</span>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/forum_02.jpeg"
+                    alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
+                /></a>
+                <div class="forum_txt">
+                  <a href="#" class="tit"
+                    >제6차 지방과학기술진흥종합계획 및 지역과학기술혁신법
+                    충청·수도권 공청..</a
+                  >
+                  <span class="date">2022-11-03(목) 13:00 ~ 15:00</span>
+                  <span class="forum_status">행사안내</span>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/forum_03.jpeg"
+                    alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
+                /></a>
+                <div class="forum_txt">
+                  <a href="#" class="tit"
+                    >하반기 혁신도전 프로젝트 연구개발사업 공보</a
+                  >
+                  <span class="date"
+                    >2022-10-17(월) 00:00 ~ 2022-11-16(수) 23:59</span
+                  >
+                  <span class="forum_status">행사안내</span>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="./images/forum_04.png"
+                    alt="제151회 수요포럼 바이오 디지털 전환과 신성장 투자전략"
+                /></a>
+                <div class="forum_txt">
+                  <a href="#" class="tit"
+                    >제151회 수요포럼 개최, 바이오 디지털 전환과 신성장
+                    투자전략</a
+                  >
+                  <span class="date">2022-10-12(화) 18:05</span>
+                  <span class="forum_status d_day">수요포럼</span>
+                </div>
+              </li>
+            </ul>
+            <div class="forum_controll">
+              <button class="forum_prev">
+                <img src="./images/right.png" alt="이전보기">
+              </button>
+              <button class="forum_next">
+                <img src="./images/right.png" alt="다음보기">
+              </button>
+            </div>
+          </div>
+          <button class="forum_more">
+            <img src="./images/plus.png" alt="포럼 및 행사 더보기" />
+          </button>
         </div>
       </section>
       <!-- 간행물 영역 -->

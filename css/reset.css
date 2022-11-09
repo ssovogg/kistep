@@ -19,6 +19,11 @@
 
   /* layout */
   --gap: 10px;
+
+  /* transition */
+  --transition150: all 150ms ease-in-out;
+  --transition200: all 200ms ease-in-out;
+  --transition300: all 300ms ease-in-out;
 }
 
 

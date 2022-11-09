@@ -1,3 +1,20 @@
+// 사이트맵 여닫기
+const sitemap = document.querySelector('.sitemap');
+const sitemapOpenBtn = document.querySelector('.allmenu_open');
+const sitemapCloseBtn = document.querySelector('.sitemap_close');
+let sitemapOpacity;
+sitemapOpenBtn.addEventListener('click', ()=>{
+  sitemap.classList.add('sitemap_active');
+  sitemapOpacity = setTimeout(()=>{
+    sitemap.style.opacity = '1';
+  }, 100)
+})
+sitemapCloseBtn.addEventListener('click', ()=>{
+  sitemap.classList.remove('sitemap_active');
+  sitemap.style.opacity = '0';
+  clearTimeout(sitemapOpacity);
+})
+
 // 헤더 영역 언어 버튼 선택
 const langBtn = document.querySelector('.lang_btn i');
 const langEn = document.querySelector('.lang_en');
