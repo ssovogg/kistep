@@ -15,6 +15,19 @@ sitemapCloseBtn.addEventListener('click', ()=>{
   clearTimeout(sitemapOpacity);
 })
 
+// 사이트맵 모바일버전 메뉴 여닫기
+const smMenuList = document.querySelectorAll('.sitemap_gnb .gnb1');
+const smSubMenuList = document.querySelectorAll('.sitemap_gnb .gnb2');
+for(const menu of smMenuList){
+  const submenu = menu.querySelector('.gnb2');
+  menu.addEventListener("click", ()=>{
+    smMenuList.forEach(item => item.classList.remove('gnb1_active'));
+    smSubMenuList.forEach(item => item.classList.remove('gnb2_active'));
+    menu.classList.toggle('gnb1_active');
+    submenu.classList.toggle('gnb2_active');
+  })
+}
+
 // 헤더 영역 언어 버튼 선택
 const langBtn = document.querySelector('.lang_btn i');
 const langEn = document.querySelector('.lang_en');
@@ -63,17 +76,17 @@ function moveVsSlide(num) {
 }
 
 // 비쥬얼 영역 이미지 슬라이드 구현
-const visualSlide = document.querySelector(".vss_slide_list");
-const visualPrevBtn = document.querySelector(".vss_prev");
-const visualNextBtn = document.querySelector(".vss_next");
-const visualPlayBtn = document.querySelector(".vss_play");
+// const visualSlide = document.querySelector(".vss_slide_list");
+// const visualPrevBtn = document.querySelector(".vss_prev");
+// const visualNextBtn = document.querySelector(".vss_next");
+// const visualPlayBtn = document.querySelector(".vss_play");
 
-visualPrevBtn.addEventListener("click", () => {
-  visualSlide.style.transform = "translateX(-36rem)";
-});
-visualNextBtn.addEventListener("click", () => {
-  visualSlide.style.transform = "translateX(36rem)";
-});
+// visualPrevBtn.addEventListener("click", () => {
+//   visualSlide.style.transform = "translateX(-36rem)";
+// });
+// visualNextBtn.addEventListener("click", () => {
+//   visualSlide.style.transform = "translateX(36rem)";
+// });
 
 // 공지 영역 탭 메뉴 구현
 const noticeArea = document.querySelector(".notice");
@@ -329,7 +342,7 @@ let bnTotalWidth = 0;
 
 bnPrevBtn.addEventListener("click", (e)=>{
   e.preventDefault();
-  moveBnSlide(currentBnIdx == 0 ? bnCount - 1 : currentBnIdx - 1);
+  prevBnSlide(currentBnIdx == 0 ? bnCount - 1 : currentBnIdx - 1);
 })
 bnNextBtn.addEventListener("click", (e)=>{
   e.preventDefault();
@@ -337,10 +350,14 @@ bnNextBtn.addEventListener("click", (e)=>{
 })
 function moveBnSlide(num){
   currentBnIdx = num;
-  console.log(num);
-  console.log(bnWidths[num]);
   bnTotalWidth = +bnTotalWidth + bnWidths[num];
-  console.log(bnTotalWidth);
+  bnSlides.style.left = -bnTotalWidth;
+}
+function prevBnSlide(num){
+  currentBnIdx = num;
+  bnTotalWidth = +bnTotalWidth - bnWidths[num];
+  bnSlides.style.left = + bnWidths[num];
+  console.log(bnWidths[num]);
 }
 
 // 푸터 영역 - 관련 사이트 리스트 보여주기
